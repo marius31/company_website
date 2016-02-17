@@ -1,0 +1,45 @@
+{% load i18n %}
+
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+    {% block title %}
+    <title>Victor Cons-Instal</title>
+    {% endblock %}
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--[if lte IE 6]> <style type="text/css"> .clearfix { height: 1%; } </style> <![endif]-->
+    <!--[if IE 7]> <style type="text/css"> .clearfix { display:inline-block; } </style> <![endif]-->
+    <!--[if IE ]> <style type="text/css"> img {border:0;} </style> <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Google analytics
+    <script>
+        Marius - you'll have to create a Google Analytics account for yourself and we'll paste the script function here
+    </script> -->
+
+    {% block css %}
+        <link rel='stylesheet' type="text/css" href="{{ STATIC_URL }}css/bootstrap.css">
+        <link rel='stylesheet' type="text/css" href="{{ STATIC_URL }}css/custom.css">
+    {% endblock %}
+
+    {% block js %}
+        <script type="text/javascript" src="{{ STATIC_URL }}js/jquery.js"></script>
+        <script type="text/javascript" src="{{ STATIC_URL }}js/bootstrap.js"></script>
+    {% endblock %}
+</head>
+
+<!-- Marius - this will be continued with the body section by you, maybe we'll include the side navi here and not in include folder as a separate html -->
+
+    {% block content %}
+    {% endblock %}
+
+    {% block footer%}
+    <footer>
+            Copyright &copy; 2016 - Marius Gheorghe</a>
+    </footer>
+    {% endblock %}
+    </body>
+</html>  
