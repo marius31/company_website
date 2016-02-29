@@ -139,8 +139,9 @@ SECRET_KEY = '*qf*wyyb*=5ctb+6ak9rccjmh2gcr)o7g0&qsogx&4#*1fo+22'
 ################################################################################
 ### Emailing
 ################################################################################
+from . import extra_data
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'amenajariprofi@gmail.com'
-EMAIL_HOST_PASSWORD = 'pinochio1' 
+EMAIL_HOST_USER = extra_data.EMAIL_HOST_USER
+EMAIL_HOST_PASSWORD = extra_data.EMAIL_HOST_PASSWORD
 EMAIL_PORT = 587
