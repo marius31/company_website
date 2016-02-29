@@ -9,4 +9,4 @@
      <li><a href="{% url 'installations' %}">Instalatii</a></li>
      <li><a href="{% url 'customer_advice' %}">Sfaturi pentru clienti</a></li>
      <li><a href="{% url 'contact' %}">Contact</a></li>
-   </ul>
+   </ul>	
