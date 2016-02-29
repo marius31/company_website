@@ -15,10 +15,16 @@
     <!--[if IE ]> <style type="text/css"> img {border:0;} </style> <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- Google analytics
+    <!-- Google analytics-->
     <script>
-        Marius - you'll have to create a Google Analytics account for yourself and we'll paste the script function here
-    </script> -->
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-74439766-1', 'auto');
+  ga('send', 'pageview');
+    </script> 
 
     {% block css %}
         <link rel='stylesheet' type="text/css" href="{{ STATIC_URL }}css/bootstrap.css">
@@ -31,8 +37,7 @@
     {% endblock %}
 </head>
 
-<!-- Marius - this will be continued with the body section by you, maybe we'll include the side navi here and not in include folder as a separate html -->
-
+</body>
     {% block content %}
     {% endblock %}
 
@@ -41,5 +46,5 @@
             Copyright &copy; 2016 - Marius Gheorghe</a>
     </footer>
     {% endblock %}
-    </body>
+</body>
 </html>  
